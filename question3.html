@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Recovery</title>
+    <link rel="stylesheet" href="question3.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="menu">
+            <h2>Questions</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://violinistaestudante.github.io/questao1/"> 🎧 Question 1 - Listening</a></li>
+                    <li><a href="https://violinistaestudante.github.io/questao2/"> ✍ Question 2 - Word Search </a></li>
+                    <li><a href="aulas/aula3.html"> 🔠 Question 3 - Multiple Choice </a></li>
+                    <li><a href="aulas/aula4.html">📓 Question 4 - Fill Blanks </a></li>
+                    <li><a href="aulas/aula5.html"> 👋 Question 5 - Drag and Drop </a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <header>
+                <h1>🔠 Question 3 - Multiple Choice</h1>
+                <p>Assista o vídeo e responda</p>
+            </header>
+
+            <section class="video-section">
+                <h2>Watch the video before answering:</h2>
+                <video controls width="600">
+                    <source src="/img/Queen - We Will Rock You [Lyrics].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="multiple-choice-section">
+                <h2>Multiple Choice Question:</h2>
+                <p><b>What is the main theme of the song "We Will Rock You" by Queen?</b></p>
+                <form id="quiz-form">
+                    <label>
+                        <input type="radio" name="answer" value="A">
+                        A) A love story.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="B">
+                        B) Rebellion and self-empowerment.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="C">
+                        C) A peaceful protest.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="D">
+                        D) Environmental awareness.
+                    </label><br>
+                    <button type="button" onclick="checkAnswer()">Submit Answer</button>
+                </form>
+                <p id="feedback"></p>
+            </section>
+        </main>
+
+        <script src="question3.js"></script>
+    </div>
+</body>
+</html>

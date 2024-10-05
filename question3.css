@@ -1,0 +1,142 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh; /* Garante que a altura da página seja 100% da janela */
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Menu lateral */
+.menu {
+    background-color: #2c3e50;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    height: 100vh; /* Garante que o menu ocupe toda a altura da página */
+    box-sizing: border-box; /* Inclui padding na altura total */
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu nav ul li {
+    margin-bottom: 10px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background-color: #34495e;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu nav ul li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Conteúdo principal */
+main {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: white;
+    overflow-y: auto; /* Adiciona rolagem caso o conteúdo seja maior que a tela */
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para a seção de vídeo */
+.video-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-section video {
+    border: 2px solid #34495e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para múltiplas escolhas */
+.multiple-choice-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.multiple-choice-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.multiple-choice-section form {
+    font-size: 18px;
+}
+
+.multiple-choice-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.multiple-choice-section button:hover {
+    background-color: #16a085;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .video-section video {
+        width: 100%;
+    }
+}
